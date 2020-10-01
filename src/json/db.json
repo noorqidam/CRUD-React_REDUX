@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nama": "Bani Rosul",
+      "alamat": "Tuban",
+      "umur": 59,
+      "nohp": "08129073902"
+    },
+    {
+      "id": 2,
+      "nama": "Sri Untari",
+      "alamat": "Sragen",
+      "umur": 53,
+      "nohp": "081399917940"
+    },
+    {
+      "id": 3,
+      "nama": "Noor Qidam Mujahidin",
+      "alamat": "Jakarta",
+      "umur": 26,
+      "nohp": "081210806955"
+    },
+    {
+      "id": 4,
+      "nama": "Muhammad Irfan harun Alrosyid",
+      "alamat": "Jakarta",
+      "umur": 21,
+      "nohp": "081385180558"
+    },
+    {
+      "id": 5,
+      "nama": "Salman Caesaria Alfaridzi",
+      "alamat": "Jakarta",
+      "umur": 17,
+      "nohp": "087822973353"
+    },
+    {
+      "id": 6,
+      "nama": "Adinda Rahma",
+      "alamat": "Banten",
+      "umur": 21,
+      "nohp": "089518381417"
+    },
+    {
+      "id": 7,
+      "nama": "Mega Balqis Herdianti Rahman",
+      "alamat": "Purwakarta",
+      "umur": 22,
+      "nohp": "087899118210"
+    },
+    {
+      "id": 8,
+      "nama": "Fikario Yaputra",
+      "alamat": "Palembang",
+      "umur": 25,
+      "nohp": "082244672429"
+    },
+    {
+      "id": 9,
+      "nama": "Kamil Iman Santoso",
+      "alamat": "Cileungsi",
+      "umur": 29,
+      "nohp": "081290646388"
+    },
+    {
+      "id": 10,
+      "nama": "Suryadi",
+      "alamat": "Brebes",
+      "umur": 27,
+      "nohp": "087883886388"
+    },
+    {
+      "id": 11,
+      "nama": "Kadimin",
+      "alamat": "Kebumen",
+      "umur": 38,
+      "nohp": "085694950001"
+    },
+    {
+      "id": 12,
+      "nama": "Satrio Yunus",
+      "alamat": "Padang",
+      "umur": 23,
+      "nohp": "081584979452"
+    }
+  ]
+}
