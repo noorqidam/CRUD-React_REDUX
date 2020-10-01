@@ -83,6 +83,20 @@
       "alamat": "Padang",
       "umur": 23,
       "nohp": "081584979452"
+    },
+    {
+      "nama": "Nina Zatulini",
+      "nohp": "08987654321",
+      "alamat": "Jakarta",
+      "umur": "34",
+      "id": 13
+    },
+    {
+      "nama": "Riyad Mahrez",
+      "nohp": "08987654321",
+      "alamat": "Aljazair",
+      "umur": "28",
+      "id": 14
     }
   ]
 }
