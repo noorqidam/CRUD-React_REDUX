@@ -4,6 +4,7 @@ import { API_URL } from "../utils/constants";
 export const GET_USERS_LIST = "GET_USER_LIST";
 export const GET_USER_DETAIL = "GET_USER_DETAIL";
 export const POST_USER_CREATE = "POST_USER_CREATE";
+export const PUT_USER_EDIT = "PUT_USER_EDIT";
 
 export const getUsersList = () => {
   return (dispatch) => {
@@ -58,7 +59,7 @@ export const getUserDetail = (id) => {
 export const postUserCreate = (data) => {
   return (dispatch) => {
     axios
-      .post(API_URL + "usersas", data)
+      .post(API_URL + "users", data)
       .then(function (response) {
         console.log(response);
         dispatch({
@@ -77,6 +78,44 @@ export const postUserCreate = (data) => {
             errorMessage: error.message
           }
         })
+      })
+  }
+}
+
+export const putUserUpdate = (data, id) => {
+  return (dispatch) => {
+    axios
+      .put(API_URL + "users/" + id, data)
+      .then(function (response) {
+        dispatch({
+          type: PUT_USER_EDIT,
+          payload: {
+            data: response.data,
+            errorMessage: false,
+          },
+        });
+      })
+      .catch(function (error) {
+        dispatch({
+          type: PUT_USER_EDIT,
+          payload: {
+            data: false,
+            errorMessage: error.message,
+          },
+        });
+      });
+  };
+};
+
+export const deleteUser = (id) => {
+  return (dispatch) => {
+    axios
+      .delete(API_URL + "users/" + id)
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
       })
   }
 }

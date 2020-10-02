@@ -2,6 +2,7 @@ import {
   GET_USERS_LIST,
   GET_USER_DETAIL,
   POST_USER_CREATE,
+  PUT_USER_EDIT
 } from "../actions/userAction";
 
 let initialState = {
@@ -34,6 +35,12 @@ const users = (state = initialState, action) => {
         getResponDataUser: action.payload.data,
         errorResponDataUser: action.payload.errorMessage,
       };
+    case PUT_USER_EDIT:
+      return {
+        ...state,
+        getResponDataUser: action.payload.data,
+        errorResponDataUser: action.payload.errorMessage,
+      }
     default:
       return state;
   }

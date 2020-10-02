@@ -12,8 +12,34 @@ import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit";
 import paginationFactory from "react-bootstrap-table2-paginator";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+// import swal from "sweetalert";
+// import { deleteUser } from "../actions/userAction";
 
 const { SearchBar } = Search;
+
+const handleClick = (dispatch, id) => {
+  console.log("User dengan id = " + id);
+  // swal({
+  //   title: "Apakah Anda yakin akan menghapus data ini ?",
+  //   icon: 'warning',
+  //   buttons: true,
+  //   dangerMode: true
+  // })
+  //   .then((willDelete) => {
+  //     if (willDelete) {
+  //       dispatch(deleteUser(id))
+  //       swal(
+  //         "Data User Sukses dihapus", {
+  //         icon: "success",
+  //       }
+  //       )
+  //     } else {
+  //       swal(
+  //         "Data gagal dihapus"
+  //       )
+  //     }
+  //   })
+}
 
 const defaultSorted = [
   {
@@ -65,11 +91,9 @@ const TableComponent = (props) => {
                 <FontAwesomeIcon icon={faEdit} /> Edit
               </Button>
             </Link>
-            <Link to={"delete/" + row.id}>
-              <Button color="danger" className="mr-2">
-                <FontAwesomeIcon icon={faTrash} /> Delete
+            <Button color="danger" className="mr-2" onClick={() => handleClick(props.dispatch, row.id)}>
+              <FontAwesomeIcon icon={faTrash} /> Delete
               </Button>
-            </Link>
           </div>
         );
       },
